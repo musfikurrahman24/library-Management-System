@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Return Books Form</title>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type=number], input[type=date] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			width: 50%;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Return Books Form</h2>
+		<form action="insert_Return_Book.php" method="post">
+			<label for="return_id">Return ID:</label>
+			<input type="number" id="return_id" name="return_id" required>
+
+			<label for="borrow_id">Borrow ID:</label>
+			<input type="number" id="borrow_id" name="borrow_id" required>
+
+			<label for="return_date">Return Date:</label>
+			<input type="date" id="return_date" name="return_date" required>
+
+			<label for="fine">Fine:</label>
+			<input type="number" id="fine" name="fine" required>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

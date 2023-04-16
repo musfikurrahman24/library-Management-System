@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Report Form</title>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="text"], input[type="date"], input[type="number"] {
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 200px;
+			margin-bottom: 10px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Report Form</h2>
+	<form action="report.php" method="post">
+		<label for="report_id">Report ID:</label>
+		<input type="text" id="report_id" name="report_id" required>
+
+		<label for="student_id">Student ID:</label>
+		<input type="text" id="student_id" name="student_id" required>
+
+		<label for="librarian_id">Librarian ID:</label>
+		<input type="text" id="librarian_id" name="librarian_id" required>
+
+		<label for="book_id">Book ID:</label>
+		<input type="text" id="book_id" name="book_id" required>
+
+		<label for="borrow_date">Borrow Date:</label>
+		<input type="date" id="borrow_date" name="borrow_date" required>
+
+		<label for="due_date">Due Date:</label>
+		<input type="date" id="due_date" name="due_date" required>
+
+		<label for="return_date">Return Date:</label>
+		<input type="date" id="return_date" name="return_date">
+
+		<label for="fine">Fine:</label>
+		<input type="number" id="fine" name="fine">
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
